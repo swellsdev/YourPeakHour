@@ -6,16 +6,17 @@ function InitializeMap(data) {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
 	var map = new google.maps.Map(mapCanvas, mapOptions)
-
+	var markers = [];
 	if(data){
 		for(i=0;i<data.length;i++){
 			var location = data[i];
 			var latLng = new google.maps.LatLng(location.LAT, location.LONG);
 			var marker = new google.maps.Marker({
         		position: latLng,
-        		map: map
         	});
+        	markers.push(marker);
 		}
+		var mc = new MarkerClusterer(map, markers);
 	}
 }
 

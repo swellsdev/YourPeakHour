@@ -18,3 +18,4 @@
 //= require maps.googleapis.com.js
 //= require main
 //= require map
+//= require markerclusterer_compiled.js
