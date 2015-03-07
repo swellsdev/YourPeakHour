@@ -15,3 +15,6 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+//= require maps.googleapis.com.js
+//= require main
+//= require map

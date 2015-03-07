@@ -12,6 +12,10 @@ img {
   font-size: inherit;
   }
 
+.navbar-link {
+  @extend .navbar-brand;
+  }
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral
@@ -43,4 +47,9 @@ main {
 section {
   @extend .row;
   margin-top: 20px;
+  }
+
+#map-canvas {
+    width: 500px;
+    height: 400px;
   }

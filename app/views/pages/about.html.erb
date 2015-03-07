@@ -1,5 +1,11 @@
 <% content_for :title do %>About<% end %>
-<h3>About the Website</h3>
+<h3>About YourPeakHour</h3>
+<p>
+The data used on this website came from <%= link_to('data.vic.gov.au', 'data.vic.gov.au') %>, using the <%= link_to('VicRoads Speed Data by road segment', 'https://www.data.vic.gov.au/data/dataset/vicroads-speed-data-by-road-segment') %> data set.
+</p>
+<p>
+Changes may have been made to the data to remove anomalies, these changes are not endorsed by VicRoads.  The data is used under the <%= link_to('Creative Commons Attribution 3.0 Australia', 'http://creativecommons.org/licenses/by/3.0/au/') %> License.
+</p>
 <p>
 This web application was created with
 <%= link_to('Rails Composer', 'http://railsapps.github.io/rails-composer/') %>
