@@ -1,6 +1,5 @@
 $( document ).ready(function() {
-  setMapWindowResizeEvent();
-  google.maps.event.addDomListener(window, 'load', InitializeMap);	
+  setMapWindowResizeEvent();	
   GetTrafficLocationData();
 });
 
